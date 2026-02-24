@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form Task</title>
+    <link rel="stylesheet" href="Task4-2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>STUDENT FORM</h2>
+        <div class="input-group">
+            <div class="label">Name</div>
+            <input type="text" id="name">
+        </div>
+        <div class="input-group">
+            <div class="label">Age</div>
+            <input type="number" id="age">
+        </div>
+        <div class="input-group">
+            <div class="label">Gender</div>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male" checked> Male 
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="label">Course</div>
+            <select id="course">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="React">React</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <div class="label">E-mail</div>
+            <input type="text" id="email">
+        </div>
+        <button class="save-btn" onclick="saveData()">Save</button>
+    </div>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            </tbody>
+    </table><br><br>
+    <button id="Show">Show Database</button>
+    <button id="close">close</button>
+    <script src="Task4-3.js"></script>
+</body>
+</html>
